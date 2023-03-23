@@ -1,27 +1,29 @@
-# GithubRepoSearch
+# Angular-test-GHrepo-search
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## Development server
+With this app, you can search for a repository on GitHub and see a list of the first 30 repositories with that name. You'll see a collection of cards with the repository title, the owner's username, and a short description. If you click on the "View Details" button, you'll be redirected to the repository details page where you can see the repository name and creation date, owner data including their name, avatar, and a link to their profile. You'll also see the full repository description with a button to the repository on GitHub.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## App demo:
 
-## Code scaffolding
+![searcher](/demo-img/app-001.png)
+![repo-cards](/demo-img/app-002.png)
+![repo-details](/demo-img/app-003.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to install the app
 
-## Build
+* Clone the repository to your computer
+* Install the dependencies with 
+```bash
+npm install
+```
+* run the app localy with the command: 
+```bash 
+ngserve
+```
+* The app with be compiled and ran in a local server at: http://localhost:4200/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Some possible improvements:
+* Authenticate with the GitHub token to access more information
+* Add pagination to the search to display more repositories.
+* Display the repository's Readme.md file on the details screen
