@@ -1,0 +1,31 @@
+.bg-darkgray {
+  background-color: #2a2b38;
+}
+
+.repo-tittle {
+  size: 3.2rem;
+  color: #c4c3ca;
+  text-decoration: underline;
+}
+.avatar {
+  height: 8rem;
+  width: 8rem;
+}
+.user-link-profile {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c4c3ca;
+  background-color: transparent;
+  padding: 0.3rem;
+  border-radius: 6px;
+  border: #c4c3ca 3px solid;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.user-link-profile:hover {
+  color: #2a2b38;
+  background-color: #c4c3ca;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}

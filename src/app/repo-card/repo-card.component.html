@@ -1,0 +1,16 @@
+<div class="pt-3 mt-3 mb-3 repo-card">
+  <div class="container">
+    <h4 class="text-tittle text-center">{{ repo?.name }}</h4>
+  </div>
+  <div>
+    <p class="text-light pt-3 px-5">by: {{ repo?.owner?.login }}</p>
+    <p class="text-light pb-3 px-5">
+      {{ repo?.description?.slice(0, 45) + "..." }}
+    </p>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-repo-card text-center" (click)="openDetails.emit()">
+      ver Detalles
+    </button>
+  </div>
+</div>
